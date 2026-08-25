@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Join Trade With Munaf — free stock market education community on Telegram.">
+<title>TRADE WITH MUNAF | Official Community</title>
+
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #fff8ea;
+  background: #0D0A05;
+}
+
+.wrapper { width: 100%; max-width: 420px; }
+
+.card {
+  background: #17130A;
+  border: 1px solid rgba(217, 119, 6, 0.22);
+  border-radius: 20px;
+  padding: 22px 20px 22px;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.6);
+}
+
+/* Horizontal header - avatar left, name+badge right */
+.header-row { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 2px solid #D97706;
+  background: #2a2010;
+  flex-shrink: 0;
+}
+.header-text h1 { font-size: 17px; font-weight: 900; color: #ffffff; line-height: 1.2; }
+.header-text .badge-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 4px;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #f0c98a;
+}
+
+.subtitle { font-size: 12px; color: #d8c49a; margin-bottom: 18px; }
+
+/* Icon-value stat chips */
+.icon-stats { display: flex; gap: 8px; margin-bottom: 18px; }
+.icon-stats .chip {
+  flex: 1;
+  background: rgba(217, 119, 6, 0.08);
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  border-radius: 12px;
+  padding: 10px 6px;
+  text-align: center;
+}
+.icon-stats .chip i { color: #D97706; font-size: 13px; margin-bottom: 4px; display: block; }
+.icon-stats .chip strong { display: block; font-size: 12.5px; color: #f0e4c8; }
+.icon-stats .chip span { font-size: 8.5px; color: #a8916b; }
+
+/* Dash-style minimal features */
+.dash-list { text-align: left; margin-bottom: 18px; }
+.dash-item {
+  font-size: 12.5px;
+  color: #f0e4c8;
+  padding: 6px 0 6px 15px;
+  position: relative;
+}
+.dash-item::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #D97706;
+  font-weight: 800;
+}
+
+.cta-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #17A3E8 0%, #0088CC 45%, #006BA3 100%);
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  box-shadow: 0 16px 36px rgba(0, 136, 204, 0.5), inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -2px 6px rgba(0,0,0,0.15);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: transform 0.15s ease, filter 0.2s ease;
+  cursor: pointer;
+  margin-bottom: 4px;
+  overflow: hidden;
+  min-height: 62px;
+}
+.cta-btn::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
+}
+.cta-btn:active { transform: scale(0.97); }
+.cta-btn:hover { filter: brightness(1.06); }
+
+.cta-icon-badge {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cta-icon-badge i { font-size: 17px; }
+
+.cta-text-wrap { position: relative; text-align: left; }
+.cta-text-wrap .main-txt { display: block; font-size: 14.5px; font-weight: 900; line-height: 1.25; }
+.cta-text-wrap .sub-txt { display: block; font-size: 10px; font-weight: 500; color: rgba(255,255,255,0.75); margin-top: 2px; }
+
+.disclaimer {
+  margin-top: 16px;
+  font-size: 9.5px;
+  line-height: 1.6;
+  color: #6b5c38;
+  text-align: center;
+  padding: 12px 4px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+</style>
+
+</head>
+<body>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1416722627015861');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1416722627015861&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<div class="wrapper">
+  <div class="card">
+
+    <div class="header-row">
+      <img src="munaf.jpg" class="avatar" alt="Profile Image" width="62" height="62" decoding="async" fetchpriority="high">
+      <div class="header-text">
+        <h1>TRADE WITH MUNAF</h1>
+        <div class="badge-inline"><i class="fas fa-shield-halved"></i> ధృవీకరించబడింది</div>
+      </div>
+    </div>
+
+    <p class="subtitle">స్టాక్ మార్కెట్ &amp; Financial Trading Education</p>
+
+    <div class="icon-stats">
+      <div class="chip"><i class="fas fa-graduation-cap"></i><strong>100%</strong><span>ప్రారంభకులకు</span></div>
+      <div class="chip"><i class="fas fa-calendar-day"></i><strong>ప్రతిరోజు</strong><span>Updates</span></div>
+      <div class="chip"><i class="fas fa-unlock"></i><strong>ఉచితం</strong><span>Access</span></div>
+    </div>
+
+    <div class="dash-list">
+      <div class="dash-item">ప్రతిరోజు Market Updates &amp; Insights</div>
+      <div class="dash-item">ఉచిత Educational Content, no hidden fees</div>
+      <div class="dash-item">ప్రారంభకులకు సులభమైన వివరణ</div>
+      <div class="dash-item">పూర్తి Active Community Support</div>
+    </div>
+
+    <a class="cta-btn" id="telegramBtn" href="https://t.me/+L6BfDILJJclmZWE1" rel="noopener noreferrer">
+      <span class="cta-icon-badge"><i class="fab fa-telegram-plane"></i></span>
+      <span class="cta-text-wrap">
+        <span class="main-txt">Join Free Telegram Community</span>
+        <span class="sub-txt">Instant access • 100% free</span>
+      </span>
+    </a>
+
+    <div class="disclaimer">
+      <strong>Disclaimer:</strong> ఈ platform కేవలం educational మరియు informational objectives కోసం మాత్రమే. ఇది ఏ విధమైన financial advice కాదు మరియు ఏ లాభాలకు హామీ ఇవ్వదు. Stock market investments carry risk — ఏదైనా నిర్ణయం తీసుకునే ముందు దయచేసి మీ స్వంత research చేసుకోండి.
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const telegramLink = "https://t.me/+L6BfDILJJclmZWE1";
+  const telegramBtn = document.getElementById("telegramBtn");
+
+  telegramBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    if (window.fbq) {
+      fbq('track', 'Subscribe', { content_name: 'Telegram Community', button_click: true }, { eventID: 'telegram_subscribe_' + Date.now() });
+    }
+    setTimeout(() => {
+      window.location.href = telegramLink;
+    }, 200);
+  });
+})();
+</script>
+
+</body>
+</html>
